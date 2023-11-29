@@ -6,9 +6,8 @@ export const ScrollProvider = ({ children }) => {
   const [scroll, setScroll] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 100) {
       setScroll(true);
-      console.log(scroll);
     } else {
       setScroll(false);
     }
